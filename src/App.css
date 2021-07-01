@@ -1,8 +1,19 @@
-.App {
-  text-align: center;
-}
+/* .App {
+  display: flex;
 
-.App-logo {
+} */
+.cardContinuer {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-content: space-between;
+}
+/* .cardContinuer .card {
+  margin: 50px;
+} */ 
+
+/*.App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -34,5 +45,100 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+#root{
+ background-color: #101010;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+/* .abutMe { */
+  /* background-image: url("https://www.greaterlondonwebdesign.co.uk/servbnr_images/ser_banner_19042017144649web-development.jpg"); */
+  /* background-image: url("https://actiknow.com/wp-content/uploads/2018/04/home-banner-WebDevelopment.jpg"); */
+  /* background-image: url("https://d2zjx838egoiiq.cloudfront.net/077a0cef/web%20dev-NEW.jpg"); */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh; */
+/* } */
+/* #title {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: initial;
+  font-size: 50px;
+  color: white; */
+/* } */
+/* #title p{
+ font-size: 20px;
+} */
+/* #abutMeP {
+  top: 30%;
+  left: 50%;
+  transform: translate(50%, 300%);
+  font-family: initial;
+  font-size: 40px;
+  color: white;
+} */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #ffc107;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left 0.5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
   }
 }
