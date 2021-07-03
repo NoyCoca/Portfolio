@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Button from "../Features/Botton";
+import Button from "./Button";
 import { colors } from "../Pages/StyledPage";
 const Project = ({ projectObject }) => {
   const { projectName, explanation, img, code, website } = projectObject;
@@ -7,7 +7,7 @@ const Project = ({ projectObject }) => {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: white;
+    /* color: white; */
     margin: 50px;
     img {
       width: 40%;

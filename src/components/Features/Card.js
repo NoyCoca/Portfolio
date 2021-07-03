@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Card = ({ title, img  }) => {
+const Card = ({ title, img, explanation }) => {
   const StyleDiv = styled.div`
     display: flex;
     flex-direction: column;
@@ -11,9 +11,9 @@ const Card = ({ title, img  }) => {
     height: 60vh;
     justify-content: center;
     align-items: center;
-    filter: brightness(0.5);
+    filter: brightness(0.7);
     &:hover {
-      filter: brightness(0.8);
+      filter: brightness(1);
     }
   `;
   const StyleDivInfo = styled.div``;
@@ -21,7 +21,7 @@ const Card = ({ title, img  }) => {
   return (
     <StyleDiv>
       <h1> {title}</h1>
-      <p> vfvfvfvfv </p>
+      <p>{explanation}</p>
     </StyleDiv>
   );
 };

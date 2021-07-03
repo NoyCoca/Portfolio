@@ -1,7 +1,9 @@
 import Card from "../Features/Card";
 import AbutMe from "../Features/AbutMe";
 import styled from "styled-components";
-import {pageDiv} from './StyledPage'
+import {pageDiv} from './StyledPage';
+import myImg1 from "../../imgs/myImg.png";
+import myImg2 from "../../imgs/myImg2.png";
 
 const Home = () => {
   const StyleDiv = styled.div`
@@ -21,8 +23,8 @@ const Home = () => {
       <AbutMe />
       <pageDiv>
         <StyleDiv>
-          <Card img="imges/myImg.png" title=" Engine javascript " />
-          <Card img="imges/myImg2.png" title="UseRef" />
+          <Card img={myImg1} title=" Engine javascript " />
+          <Card img={myImg2} title=" UseRef " />
         </StyleDiv>
       </pageDiv>
     </>

@@ -1,6 +1,6 @@
 import Portfolio from "../components/Pages/Portfolio";
 import Home from "../components/Pages/Home";
-import Skills from "../components/Pages/Skills/Skills";
+import Skills from "../components/Pages/Skills";
 import { Route, Switch } from "react-router-dom";
 import Contact from "../components/Pages/Contact";
 const Routing = () => {

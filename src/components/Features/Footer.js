@@ -1,5 +1,5 @@
 import  styled from 'styled-components'
-
+import { colors } from '../Pages/StyledPage';
 const Footer = () => {
   const StyleFooter = styled.footer`
     display: flex;
@@ -9,6 +9,7 @@ const Footer = () => {
     /* border-top: 0.5px solid #ffc107; */
     font-size: 20px;
     a {
+      color:${colors.yellowText};
       margin: 5px;
     }
   `;

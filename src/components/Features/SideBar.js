@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { styled } from "@material-ui/core";
 const SideBar2 = () => {
   const [isTrue, setIsTrue] = useState(false);
  

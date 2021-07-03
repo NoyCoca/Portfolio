@@ -3,6 +3,7 @@ import PageHeader from "../Features/PageHeader";
 import { PageDiv } from "./StyledPage";
 import Form from "../Features/Form";
 import {colors} from './StyledPage';
+import { useRef } from "react";
 const Contact = () => {
   const StyleDivContainer = styled.div`
     display: flex;

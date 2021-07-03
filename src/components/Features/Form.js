@@ -1,6 +1,9 @@
 import styled from "styled-components";
-import Button from "../Features/Botton";
+import Button from "./Button";
 import Input from "./Input";
+import { colors } from "../Pages/StyledPage";
+import { useEffect, useRef } from "react";
+
 const Form = () => {
   const StyleFrom = styled.form`
     display: flex;
@@ -17,29 +20,40 @@ const Form = () => {
       transition: width 0.35s ease-in-out;
       width: 100%;
       position: inherit;
+      /* border: solid 1px; */
     }
-    input:focus ,textarea:focus {
+    input:focus,
+    textarea:focus {
       width: 105%;
+      border: ${colors.yellowText} solid 4px;
     }
   `;
   const StyleH1 = styled.h1`
     color: #ffc107;
   `;
+
+
   return (
     <StyleFrom
-      method="post"
-      action="mailto:Noycoca123@gmail.com?subject=Results"
+      action="https://formsubmit.co/noycoca123@gmail.com"
+      method="POST"
+      target="_blank"
+      
     >
       <StyleH1> Get in Touch </StyleH1>
-      <Input type="text" placeholder="Full name" />
+      <Input
+        type="text"
+        name="Full name"
+        placeholder="Full name"
+      />
 
-      <Input type="Email" placeholder="Email" />
+      <Input type="email" name="email" placeholder="Email" />
 
-      <Input type="text" placeholder="Phone" />
+      <Input type="text" name="Phone" placeholder="Phone" />
 
-      <textarea rows="4" cols="50" placeholder="Your massage" />
+      <textarea rows="4" name="textarea" cols="50" placeholder="Your massage" />
 
-      <Button title="SEND" />
+      <Button title="SEND" color={colors.yellowText} />
     </StyleFrom>
   );
 };
