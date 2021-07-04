@@ -4,12 +4,7 @@ const Image = (props) => {
 
   const StyledImg = styled.img`
     width: 35%;
-   // box-shadow: 4px 3px 16px #d0bdbda8;
-     border-radius: 20%;
-    /* height: 18vh; */
- 
-
-   
+     border-radius: 20%;  
   `;
   const { img } = props;
   return (

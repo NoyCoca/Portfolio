@@ -1,8 +1,8 @@
 import PageHeader from "../Features/PageHeader";
 import styled from "styled-components";
 import Project from "../Features/Project";
-import moviesProjectImg from "../../imgs/moviesProject.png";
-import newsProjectImg from "../../imgs/newsProject.png";
+import moviesProjectImg from "../../Images/moviesProject.png";
+import newsProjectImg from "../../Images/newsProject.png";
 
 const Portfolio = () => {
   const projectsArray = [

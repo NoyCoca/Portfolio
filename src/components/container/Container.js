@@ -1,10 +1,11 @@
 
 import { BrowserRouter as Router } from "react-router-dom";
-import Header from "../components/Features/Header";
-import Footer from "../components/Features/Footer";
-import Routing from "../Routing/Routing";
+import Header from "../Features/Header";
+import Footer from "../Features/Footer";
+import Routing from "../../Routing/Routing";
 import { useState } from "react";
-import { SkillsProvider, image , skillsContext} from '../SkillsContext';
+import { SkillsProvider, image} from '../../SkillsContext';
+import { colors } from "../Pages/StyledPage";
 
 const Container = ()=> {
       const [color, setColor] = useState("dark");
@@ -13,7 +14,7 @@ const Container = ()=> {
         <div
           id="main"
           style={{
-            background: color == "dark" ? "black" : "rgb(162, 160, 160)",
+            background: color == "dark" ? `${colors.darkBackground}` : `${colors.lightBackground}`,
             color: color == "dark" ? "white" : "black",
           }}
         >

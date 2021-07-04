@@ -5,6 +5,7 @@ export const PageDiv = styled.div`
   height: 100vh;
 `;
 export const colors = {
-  blackBackground: "#101010",
+  darkBackground: "#101010",
+  lightBackground:"rgb(162, 160, 160)",
   yellowText: " #ffc107",
 };

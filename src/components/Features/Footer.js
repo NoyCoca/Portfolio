@@ -6,7 +6,6 @@ const Footer = () => {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    /* border-top: 0.5px solid #ffc107; */
     font-size: 20px;
     a {
       color:${colors.yellowText};

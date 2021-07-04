@@ -41,9 +41,10 @@ const AbutMe = () => {
               visibility: isTrue === false ? "hidden" : "",
             }}
           >
-            אחראית, חרוצה, בעלת מוטיבציה גבוהה, יכולת למידה עצמאית וקליטה מהירה,
-            ניהול משימות מרובות (מולטיאסקיטנג), עצמאות ו"ראש גדול", תיפקוד תחת
-            לחץ.
+
+            Responsible, hardworking, highly motivated, independent learning
+            ability and quick absorption, multi-task management, functioning
+            under pressure.
           </p>
           <Button
             title="Get to know me"

@@ -7,7 +7,6 @@ const Project = ({ projectObject }) => {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* color: white; */
     margin: 50px;
     img {
       width: 40%;

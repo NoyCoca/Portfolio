@@ -20,7 +20,6 @@ const Form = () => {
       transition: width 0.35s ease-in-out;
       width: 100%;
       position: inherit;
-      /* border: solid 1px; */
     }
     input:focus,
     textarea:focus {
